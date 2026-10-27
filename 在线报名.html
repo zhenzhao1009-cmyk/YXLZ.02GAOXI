@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>在线报名</title>
+		<link rel="stylesheet" type="text/css" href="报名表.css">
+	</head>
+
+	<body>
+		<div id="box">
+			<h2 class="header">下面就开始在线报名吧<span>（以下信息是报名的重要依据，请认真填写）</span></h2>
+
+			<form>
+				<table>
+					<tr>
+						<td class="left">姓名<span class="red">*</span></td>
+						<td><input type="text" class="txt01" placeholder="报名的重要依据，请认真填写"></td>
+					</tr>
+
+					<tr>
+						<td class="left">手机<span class="red">*</span></td>
+						<td><input type="text" class="txt02" placeholder="报名的重要依据，请认真填写"></td>
+					</tr>
+
+					<tr>
+						<td class="left">性别<span class="red">*</span></td>
+						<td>
+							<input type="radio" name="sex">男
+							<input type="radio" name="sex">女
+						</td>
+					</tr>
+
+					<tr>
+						<td class="left">邮箱<span class="red">*</span></td>
+						<td><input type="text" class="txt03"></td>
+					</tr>
+
+					<tr>
+						<td class="left">意向课程<span class="red">*</span></td>
+						<td>
+							<select class="course">
+								<option>平面设计</option>
+								<option>网页设计</option>
+								<option>UI设计</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="left">了解传播渠道</td>
+						<td>
+							<input type="checkbox">baidu
+							<input type="checkbox">论坛
+							<input type="checkbox">朋友推荐
+							<input type="checkbox">CSDN网站
+							<input type="checkbox">视频教程
+							<input type="checkbox">其他
+						</td>
+					</tr>
+
+					<tr>
+						<td class="left">留言</td>
+						<td><textarea class="message" placeholder="请简述您有没有设计基础，以及为什么选择学习网页平面UI设计？"></textarea></td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td><input type="submit" value="提交"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<!--
+			实验步骤6：搭建表单网页HTML元素结构。创建HTML5标准文档骨架并配置字符编码与页面标题，
+			引入外部CSS样式文件；在body中创建id为box的外层容器，容器内依次放置标题区域与表单元素，
+			表单内部使用table表格布局所有表单项；依次实现姓名、电话、邮箱单行输入框，课程下拉选择框，
+			留言多行文本域等控件，为对应元素设置指定类名与属性，以匹配样式选择器。
+			实验步骤6结束。
+		-->
+	</body>
+</html>

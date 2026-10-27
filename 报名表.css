@@ -1,0 +1,113 @@
+body {
+	font-size: 12px;
+	font-family: "宋体";
+	color: #515151;
+}
+
+body,
+h2,
+form,
+table {
+	padding: 0;
+	margin: 0;
+}
+/*
+ * 实验步骤7：设置全局基础样式与浏览器默认样式重置。
+ * 设置body全局基础样式，字号为12px，字体为宋体，字体颜色为#515151；
+ * 同时为body、h2、form、table元素统一设置内边距为0、外边距为0，清除浏览器默认样式。
+ * 实验步骤7结束。
+ */
+
+#box {
+	width: 660px;
+	height: 600px;
+	border: 1px solid #CCC;
+	padding: 20px;
+	margin: 50px auto 0;
+}
+
+.header {
+	font-size: 22px;
+	color: #0B0B0B;
+	padding-bottom: 30px;
+}
+
+.header span {
+	font-size: 12px;
+	font-weight: normal;
+}
+/*
+ * 实验步骤8：设置外层容器与标题区域样式。
+ * 设置id为box的外层容器，宽度为660px，高度为600px，边框为1px实线#CCC，
+ * 内边距为20px，外边距为50px auto 0，实现页面水平居中；
+ * 设置.header标题区域，字号为22px，字体颜色为#0b0b0b，下内边距为30px；
+ * 同时设置.header内部span，字号为12px，字体粗细为正常。
+ * 实验步骤8结束。
+ */
+
+td {
+	padding-bottom: 26px;
+}
+
+.left {
+	width: 78px;
+	text-align: right;
+	padding-right: 8px;
+}
+
+.red {
+	color: #F00;
+}
+/*
+ * 实验步骤9：设置表格布局与表单项标签样式。
+ * 设置所有表格单元格td的下内边距为26px；设置类名为left的左侧标签单元格，
+ * 宽度为78px，文本右对齐，右内边距为8px，拉开标签与控件的间距；
+ * 设置类名为red的必填提示星号，字体颜色为#F00。
+ * 实验步骤9结束。
+ */
+
+.txt01,
+.txt02 {
+	width: 320px;
+	height: 22px;
+	border: 1px solid #CCC;
+	padding-left: 30px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+
+.txt01 {
+	background: url(img/name.png) no-repeat 5px center;
+}
+
+.txt02 {
+	background: url(img/phone.png) no-repeat 5px center;
+}
+
+.txt03 {
+	width: 160px;
+	height: 22px;
+	border: 1px solid #999;
+	padding-left: 30px;
+	background: url(img/email.png) no-repeat 5px center;
+}
+
+.course {
+	width: 230px;
+}
+
+.message {
+	width: 530px;
+	height: 180px;
+	padding: 5px;
+	font-size: 12px;
+	font-family: "宋体";
+}
+/*
+ * 实验步骤10：设置各类表单控件的细节样式。
+ * 为txt01与txt02类单行输入框设置公共宽高、边框、内边距与字体样式，
+ * 分别为其添加姓名与电话图标背景图；为txt03类邮箱输入框设置对应宽高、
+ * 内边距与邮箱图标背景；为course类下拉菜单设置宽度；
+ * 为message类多行文本域设置宽高、字体与内边距样式。
+ * 实验步骤10结束。
+ */

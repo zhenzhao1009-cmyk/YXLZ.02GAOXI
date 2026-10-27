@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>大学生暑期社会实践调查问卷</title>
+		<style type="text/css">
+			body {
+				background-color: #BBDCFF;
+				margin: 20px;
+			}
+
+			.container {
+				width: 850px;
+				margin: 0 auto;
+				border: 20px solid white;
+				box-sizing: border-box;
+				background: url(img/bg.png) center repeat-y;
+			}
+
+			.content {
+				width: 780px;
+				margin: 0 auto;
+				box-sizing: border-box;
+			}
+			/*
+			 * 实验步骤2：设置body标签样式，背景色为#BBDCFF，外边距为20px。
+			 * 设置container类选择器样式，宽度为850px，水平居中显示，边框为20px白色实线，
+			 * 盒模型为border-box，背景图居中纵向重复排列。
+			 * 设置content类选择器样式，宽度为780px，水平居中显示，盒模型为border-box。
+			 * 实验步骤2结束。
+			 */
+
+			.content td {
+				padding: 4px 12px;
+				line-height: 1.8;
+				text-align: left;
+				border-top: 2px solid white;
+			}
+
+			h2 {
+				text-align: center;
+				color: #003399;
+				font-family: "黑体";
+				font-size: 32px;
+			}
+			/*
+			 * 实验步骤3：设置content中的td标签的后代选择器样式，内边距为4px 12px，
+			 * 行高为当前元素字号的1.8倍，文本左对齐，上边框为2px白色实线。
+			 * 设置标题h2标签样式，文本居中对齐，字体颜色为#003399，字体为黑体，字号为32px。
+			 * 实验步骤3结束。
+			 */
+
+			p {
+				text-indent: 2em;
+				font-size: 20px;
+				color: #003399;
+			}
+
+			span {
+				color: #0000FF;
+				font-weight: bold;
+			}
+
+			hr {
+				border: 0;
+				border-top: 2px solid white;
+				width: 95%;
+			}
+			/*
+			 * 实验步骤4：设置段落p标签样式，首行缩进2字符，字号为20px，字体颜色为#003399。
+			 * 设置span标签样式，字体颜色为#0000ff，字体加粗。
+			 * 设置水平线hr标签样式：上边框为2px白色实线，宽度为页面宽度的95%。
+			 * 实验步骤4结束。
+			 */
+
+			form {
+				font-size: 17px;
+			}
+
+			textarea {
+				width: 92%;
+			}
+
+			.content tr:nth-last-child(2) td {
+				text-align: center;
+			}
+
+			.content tr:last-child td {
+				text-align: center;
+				color: #3300CC;
+				font-weight: bold;
+			}
+			/*
+			 * 实验步骤5：设置表单form标签样式，字号为17px。
+			 * 设置文本域textarea标签样式：宽度为父容器的92%。
+			 * 设置.content tr:nth-last-child(2) td选择器样式，文本居中对齐。
+			 * 设置.content tr:last-child td选择器样式，文本居中对齐，字体颜色为#3300CC，字体加粗。
+			 * 实验步骤5结束。
+			 */
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<h2>大学生暑期社会实践调查问卷</h2>
+			<hr>
+			<p>亲爱的同学：大家好！</p>
+			<p>为了更好地了解人们对近年来计算机类专业填报火热现象的看法，特制定本问卷，希望得到您的配合，请认真阅读并回答以下问题，您的回答将直接影响本调查的可信度和有效性，真诚感谢您的支持，祝您天天愉快，谢谢！</p>
+
+			<form>
+				<table class="content">
+					<tr>
+						<td>
+							<span>1. 您的性别：</span>
+							<input type="radio" name="sex">男
+							<input type="radio" name="sex">女
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>2. 您的学校：</span>
+							<input type="text">
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>3. 您的年级：</span>
+							<select>
+								<option>请选择您的年级</option>
+								<option>大一</option>
+								<option>大二</option>
+								<option>大三</option>
+								<option>大四</option>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>4. 报考该专业的原因：</span><br>
+							<input type="checkbox">自己感兴趣<br>
+							<input type="checkbox">对将来发展有利<br>
+							<input type="checkbox">适应社会<br>
+							<input type="checkbox">父母主张<br>
+							<input type="checkbox">老师建议<br>
+							<input type="checkbox">学校调剂<br>
+							<input type="checkbox">其他
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>5. 您对该专业的建议：</span><br>
+							<input type="checkbox">招收时重质不重量<br>
+							<input type="checkbox">师资力量要改进<br>
+							<input type="checkbox">要更适应社会需要<br>
+							<input type="checkbox">加强专业实验室建设<br>
+							<input type="checkbox">其他
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>6. 您认为该专业学生有必要参加社会实践：</span><br>
+							<input type="radio" name="practice">有必要
+							<input type="radio" name="practice">没有必要
+							<input type="radio" name="practice">无所谓
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>7. 您的父母是否赞成您读该专业：</span><br>
+							<input type="radio" name="parents">很赞成，希望如此<br>
+							<input type="radio" name="parents">一般，不是很高兴<br>
+							<input type="radio" name="parents">不了解
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<span>8. 您对学校的建议：</span><br>
+							<textarea rows="5"></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="提交答案">
+							<input type="reset" value="清空">
+						</td>
+					</tr>
+
+					<tr>
+						<td>版权所有：计算机科学与技术系软件工程教研室 copyright©2015-2020</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<!--
+			实验步骤1：搭建问卷网页的HTML元素结构，包含文档声明、html、head、body标签；
+			在head中配置字符编码与页面标题；在body中创建外层容器div，定义class属性为container，
+			内部依次添加问卷标题、分隔线、段落与form表单；表单内使用table表格布局，
+			设置table表格的class属性为content，将8道问卷题目、提交与重置按钮、版权声明
+			分别放入表格行与单元格中，按需插入单选框、复选框、单行文本框、下拉选择框、
+			多行文本域等表单控件。
+			实验步骤1结束。
+		-->
+	</body>
+</html>
